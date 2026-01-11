@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMediaPlayer - Documentation & ToS</title>
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --card: #1a1a1a;
+            --accent: #0078d4;
+            --text: #e0e0e0;
+            --dim: #a0a0a0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--card);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        h1 { color: var(--accent); margin-bottom: 10px; }
+        h2 { color: var(--accent); border-left: 4px solid var(--accent); padding-left: 15px; margin-top: 40px; }
+        .card {
+            background: var(--card);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background: #333;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            margin: 2px;
+        }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #333; }
+        .tos-text { font-size: 0.9em; color: var(--dim); max-height: 300px; overflow-y: auto; background: #111; padding: 15px; border-radius: 4px; }
+        footer { text-align: center; color: var(--dim); font-size: 0.8em; margin-top: 50px; }
+    </style>
+	<link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>MyMediaPlayer</h1>
+        <p>A stable, multi-threaded universal media player.</p>
+    </header>
+
+    <div class="card">
+        <h2>Documentation</h2>
+        <p>This application is a lightweight media player built using Python, Tkinter, and the FFmpeg engine (ffpyplayer). It is designed to handle high-resolution video and audio without interface hanging.</p>
+        
+        <h3>Key Controls</h3>
+        <ul>
+            <li><strong>Open:</strong> Browse your system for any supported media file.</li>
+            <li><strong>Pause/Play:</strong> Toggle playback. Note: The UI remains responsive even during heavy decoding.</li>
+            <li><strong>Seek (-10s / +10s):</strong> Quickly jump through media using relative seeking.</li>
+        </ul>
+
+        <h3>Supported Formats</h3>
+        <div>
+            <span class="tag">Video: MP4, MKV, AVI, MOV, WEBM</span>
+            <span class="tag">Audio: MP3, WAV, FLAC, OGG, M4A</span>
+            <span class="tag">Images: JPG, PNG, BMP, TIFF</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Terms of Service</h2>
+        <div class="tos-text">
+            <p><strong>1. Acceptance of Terms:</strong> By using MyMediaPlayer, you agree to the following terms. This software is provided "as-is" without any express or implied warranties.</p>
+            <p><strong>2. License:</strong> You are granted a personal, non-exclusive license to use this software. You may not reverse-engineer the compiled binary for malicious purposes.</p>
+            <p><strong>3. Limitation of Liability:</strong> In no event shall the developer be liable for any damages (including, without limitation, damages for loss of data or profit) arising out of the use or inability to use the software.</p>
+            <p><strong>4. Third-Party Codecs:</strong> This player utilizes FFmpeg binaries via the ffpyplayer library. Use of this software must comply with the licensing of those respective third-party components (LGPL/GPL).</p>
+            <p><strong>5. Usage:</strong> You are responsible for the media files you choose to play. The developer does not provide or host any content.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 MyMediaPlayer Project. Built with stability in mind.</p>
+		<a href="https://random-internet-dude709.github.io/media-reader/index.html">Back to homepage</a>
+    </footer>
+</div>
+
+</body>
+</html>
