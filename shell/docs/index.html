@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Shell - Documentation & ToS</title>
+    <style>
+        :root {
+            --bg-color: #1e1e1e;
+            --sidebar-color: #252526;
+            --text-color: #d4d4d4;
+            --accent-color: #007acc;
+            --code-bg: #2d2d2d;
+            --border-color: #3e3e42;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+        }
+        nav {
+            width: 250px;
+            background-color: var(--sidebar-color);
+            height: 100vh;
+            position: fixed;
+            border-right: 1px solid var(--border-color);
+            padding: 20px;
+            overflow-y: auto;
+        }
+        nav h2 { color: var(--accent-color); font-size: 1.2rem; }
+        nav a {
+            display: block;
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 8px 0;
+            font-size: 0.9rem;
+        }
+        nav a:hover { color: var(--accent-color); }
+        main {
+            margin-left: 290px;
+            padding: 40px;
+            max-width: 900px;
+        }
+        h1, h2, h3 { border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
+        code {
+            background-color: var(--code-bg);
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+        }
+        pre {
+            background-color: var(--code-bg);
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+        }
+        .tos-box {
+            background-color: #2a2d2e;
+            padding: 20px;
+            border-left: 4px solid #f44336;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>Modern Shell</h2>
+    <a href="#overview">Overview</a>
+    <a href="#features">Features</a>
+    <a href="#technical">Technical Architecture</a>
+    <a href="#nuitka">Compilation Guide</a>
+    <a href="#tos">Terms of Service</a>
+</nav>
+
+<main>
+    <section id="overview">
+        <h1>Project Documentation</h1>
+        <p><strong>Modern Shell</strong> is a cross-platform terminal emulator built with Python and PySide6. It provides a sleek, dark-themed GUI wrapper around system shell commands, utilizing the <code>qtmodern</code> library for a native, sophisticated look.</p>
+    </section>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Asynchronous Execution:</strong> Uses <code>QThreadPool</code> to prevent the GUI from freezing during long-running tasks.</li>
+            <li><strong>Modern UI:</strong> Frameless window support with dark mode styles.</li>
+            <li><strong>Smart Command Handling:</strong> Detects interactive commands (cmd, powershell) and launches them in dedicated native windows.</li>
+            <li><strong>Directory Tracking:</strong> Persistent Current Working Directory (CWD) management with a visual status bar.</li>
+        </ul>
+    </section>
+
+    <section id="technical">
+        <h2>Technical Architecture</h2>
+        <p>The application follows a Worker-Signal pattern:</p>
+        <ol>
+            <li><strong>Main Thread:</strong> Handles the PySide6 event loop and UI rendering.</li>
+            <li><strong>Worker Thread (QRunnable):</strong> Executes <code>subprocess.run()</code> or <code>subprocess.Popen()</code> to interact with the OS.</li>
+            <li><strong>Signals:</strong> Custom <code>WorkerSignals</code> bridge the gap between threads to update the console safely.</li>
+        </ol>
+        
+    </section>
+
+    <section id="tos" class="tos-box">
+        <h2>Terms of Service (ToS)</h2>
+        <p><small>Last Updated: October 2023</small></p>
+        
+        <h3>1. Usage Agreement</h3>
+        <p>By using Modern Shell, you acknowledge that this is a tool for executing system-level commands. You are solely responsible for any commands executed through this interface.</p>
+
+        <h3>2. "As-Is" Disclaimer</h3>
+        <p>This software is provided "as-is" without warranty of any kind. The developer is not liable for data loss, system instability, or unintended command execution resulting from the use of this shell wrapper.</p>
+
+        <h3>3. Administrative Privileges</h3>
+        <p>Certain commands require administrative rights. If the application is not run "As Administrator," system-level commands may fail or return permission errors.</p>
+
+        <h3>4. Distribution</h3>
+        <p>This software may be redistributed and modified provided that original authorship is acknowledged. It is intended for developer use and educational purposes.</p>
+    </section>
+
+    <footer style="margin-top: 50px; color: #888; font-size: 0.8rem;">
+        &copy; 2023 Modern Shell Project. Documentation generated for PySide6 Implementation.
+    </footer>
+</main>
+
+</body>
+</html>
