@@ -53,16 +53,17 @@ echo [✓] Python installed successfully.
 :: 5. Install Required Dependencies
 echo.
 echo [!] Upgrading pip and installing build tools...
-python -m pip install --upgrade pip --quiet [cite: 1]
+python -m pip install --upgrade pip --quiet
 
 echo [!] Installing PyInstaller...
-python -m pip install pyinstaller --quiet [cite: 1]
+python -m pip install pyinstaller --quiet
 
 echo [!] Installing pypiwin32...
-python -m pip install pypiwin32 --quiet [cite: 1]
+python -m pip install pypiwin32 --quiet
 
 echo =======================================================
 echo [✓] SETUP COMPLETE! 
 echo You can now run the Installer Builder executable.
 echo =======================================================
-pause [cite: 2]
+
+pause
