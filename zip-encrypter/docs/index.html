@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZipEncryptor - Documentation & ToS</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f4f7f9; }
+        .container { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 30px; }
+        code { background: #f8f8f8; padding: 2px 5px; border-radius: 4px; border: 1px solid #ddd; font-family: "Courier New", Courier, monospace; }
+        .command-box { background: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px; font-family: monospace; overflow-x: auto; }
+        .warning { background: #fff3cd; border-left: 5px solid #ffecb5; padding: 15px; margin: 20px 0; color: #856404; }
+        .tos-box { font-size: 0.9em; color: #666; height: 200px; overflow-y: scroll; border: 1px solid #ddd; padding: 15px; margin-top: 20px; background: #fafafa; }
+        footer { margin-top: 40px; text-align: center; font-size: 0.8em; color: #999; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>ZipEncryptor Documentation</h1>
+    <p>This utility is a high-security CLI tool designed to archive folders into ZIP files using <strong>AES-256 bit encryption</strong>.</p>
+
+    <h2>How to Use</h2>
+    <p>Run the executable from your terminal (Command Prompt or PowerShell) using the following syntax:</p>
+    
+    <div class="command-box">
+        zipencrypt &lt;input_folder&gt; &lt;output_zip_file&gt; &lt;password&gt;
+    </div>
+
+    <h3>Example:</h3>
+    <code>script.exe "C:\Documents\Private" "C:\Backups\Secret.zip" "MySafePassword123"</code>
+
+    <div class="warning">
+        <strong>Compatibility Note:</strong> While this tool creates standard ZIP files, the built-in Windows "Compressed Folders" extractor in older versions of Windows may not support AES-256. For best results, use <strong>7-Zip</strong> or <strong>WinRAR</strong> to decrypt files.
+    </div>
+
+    <h2>Terms of Service</h2>
+    <div class="tos-box">
+        <p><strong>1. Acceptance of Terms:</strong> By using ZipEncryptor, you agree to these terms. This software is provided "as is" without warranty of any kind.</p>
+        <p><strong>2. No Recovery:</strong> You acknowledge that the AES-256 encryption used is computationally infeasible to break. If you lose or forget the password used to encrypt a file, the data is unrecoverable. The developer holds no responsibility for lost data.</p>
+        <p><strong>3. Liability:</strong> In no event shall the developer be liable for any damages (including, without limitation, damages for loss of data or profit) arising out of the use or inability to use this software.</p>
+        <p><strong>4. Lawful Use:</strong> You agree to use this software only for lawful purposes and in accordance with your local jurisdiction’s export control laws regarding cryptography.</p>
+        <p><strong>5. MIT License:</strong> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files...</p>
+    </div>
+
+    <footer>
+        &copy; 2026 ZipEncryptor Utility | Built with Python & Nuitka
+		<p></p>
+		<a href="https://random-internet-dude709.github.io/zip-encrypter/index.html">Back to homepage</a>
+    </footer>
+</div>
+
+</body>
+</html>

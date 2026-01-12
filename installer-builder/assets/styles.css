@@ -82,7 +82,7 @@ body {
 
     /* Color and Transparency */
     /* Using RGBA for color and alpha (transparency) */
-    background-color: rgba(0, 0, 0, 0.5); /* Turquoise color with 70% opacity */
+    background-color: rgba(0, 0, 0, 0.7); /* Turquoise color with 70% opacity */
 
     /* Rounded Corners */
     border-radius: 20px; /* Adjust the pixel value for more or less rounding */
@@ -94,6 +94,9 @@ body {
     /* Optional: Center text inside the box */
     text-align: center;
     color: #333;
+h1 {
+  color: white;
+}
 }
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px;}
 h1 { margin-top: 40px; }
