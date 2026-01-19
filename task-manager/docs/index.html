@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager | Official Documentation</title>
+    <style>
+        :root {
+            --bg-color: #1a1d20;
+            --container-bg: #2b3035;
+            --primary-blue: #17a2b8;
+            --text-main: #f8f9fa;
+            --text-dim: #adb5bd;
+            --accent-red: #dc3545;
+            --code-bg: #000000;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background: #111;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            display: flex;
+            gap: 20px;
+            border-bottom: 2px solid var(--primary-blue);
+            z-index: 1000;
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover { color: var(--primary-blue); }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: var(--container-bg);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        section { margin-bottom: 60px; scroll-margin-top: 80px; }
+
+        h1, h2, h3 { color: var(--primary-blue); margin-top: 0; }
+        h1 { font-size: 2.5rem; text-align: center; border-bottom: 2px solid #444; padding-bottom: 20px; margin-bottom: 40px; }
+        
+        p { color: var(--text-dim); }
+
+        pre {
+            background: var(--code-bg);
+            color: #00ffcc;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border-left: 5px solid var(--primary-blue);
+            font-family: 'Consolas', monospace;
+            font-size: 0.95rem;
+        }
+
+        .warning-box {
+            background: rgba(220, 53, 69, 0.1);
+            border: 1px solid var(--accent-red);
+            color: #ff8e98;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-item {
+            background: rgba(255,255,255,0.05);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid var(--primary-blue);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .legal-text { font-size: 0.95rem; }
+        hr { border: 0; border-top: 1px solid #444; margin: 40px 0; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#docs">Documentation</a>
+        <a href="#tos">Terms of Service</a>
+    </nav>
+
+    <div class="container">
+        <section id="docs">
+            <h1>TASK MANAGER</h1>
+            <p style="text-align: center;">Advanced Windows Process Monitoring & Resource Management</p>
+            
+            <h2>🚀 Overview</h2>
+            <p>Task Manager is a professional-grade utility built for power users. It provides real-time visibility into system resources with a focus on visual clarity and administrative control.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <strong>Monitor Engine</strong>
+                    <p>Animated heartbeat feedback during system refreshes.</p>
+                </div>
+                <div class="feature-item">
+                    <strong>Deep Extraction</strong>
+                    <p>Bypasses standard UI locks to fetch application icons directly.</p>
+                </div>
+                <div class="feature-item">
+                    <strong>Smart Search</strong>
+                    <p>Instant filtering across names and process IDs.</p>
+                </div>
+                <div class="feature-item">
+                    <strong>UAC Shield</strong>
+                    <p>Elevated permissions to handle protected system tasks.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <hr>
+
+        <section id="tos">
+            <h2>⚖️ Terms of Service</h2>
+            <div class="legal-text">
+                <h3>1. Purpose of Software</h3>
+                <p>Task Manager is a utility designed for process monitoring. By using this software, you acknowledge that terminating system processes can result in immediate system instability or permanent data loss.</p>
+
+                <h3>2. No Warranty</h3>
+                <p>The software is provided "As-Is". We make no guarantees regarding the accuracy of the memory reporting or the safety of the process termination features. The user assumes 100% of the risk associated with system modifications.</p>
+
+                <h3>3. Administrative Rights</h3>
+                <p>This software requires and will request Administrative Access. It is the user's responsibility to ensure they have the legal right to monitor and manage the system on which the software is installed.</p>
+
+                <h3>4. Data Privacy</h3>
+                <p>Task Manager operates entirely on the local machine. It does not phone home, transmit process lists, or collect telemetry data.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 Task Manager Development Team. All rights reserved.
+		<p></p>
+		<a href="https://random-internet-dude709.github.io/task-manager">Back to homepage</a>
+    </footer>
+
+</body>
+</html>
