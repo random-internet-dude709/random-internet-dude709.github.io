@@ -1,0 +1,129 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+{
+    /* Optional: Add a background to better see the transparency */
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.red-box {
+    /* Dimensions */
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+
+    /* Color and Transparency */
+    /* Using RGBA for color and alpha (transparency) */
+    background-color: rgba(255, 0, 0, 0.5); /* Turquoise color with 70% opacity */
+
+    /* Rounded Corners */
+    border-radius: 20px; /* Adjust the pixel value for more or less rounding */
+
+    /* Optional: Add a subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    /* Optional: Center text inside the box */
+    text-align: center;
+    color: #333;
+
+}
+.green-box {
+    /* Dimensions */
+    width: 875px;
+    padding: 20px;
+    margin: 20px;
+
+    /* Color and Transparency */
+    /* Using RGBA for color and alpha (transparency) */
+    background-color: rgba(0, 255, 0, 0.5); /* Turquoise color with 70% opacity */
+
+    /* Rounded Corners */
+    border-radius: 20px; /* Adjust the pixel value for more or less rounding */
+
+    /* Optional: Add a subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+
+    /* Optional: Center text inside the box */
+    text-align: center;
+    color: #333;
+}
+.blue-box {
+    /* Dimensions */
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+
+    /* Color and Transparency */
+    /* Using RGBA for color and alpha (transparency) */
+    background-color: rgba(0, 255, 255, 0.5); /* Turquoise color with 70% opacity */
+
+    /* Rounded Corners */
+    border-radius: 20px; /* Adjust the pixel value for more or less rounding */
+
+    /* Optional: Add a subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+
+    /* Optional: Center text inside the box */
+    text-align: center;
+    color: #333;
+}
+.black-box {
+    /* Dimensions */
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+
+    /* Color and Transparency */
+    /* Using RGBA for color and alpha (transparency) */
+    background-color: rgba(0, 0, 0, 0.7); /* Turquoise color with 70% opacity */
+
+    /* Rounded Corners */
+    border-radius: 20px; /* Adjust the pixel value for more or less rounding */
+
+    /* Optional: Add a subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+
+    /* Optional: Center text inside the box */
+    text-align: center;
+    color: #333;
+h1 {
+  color: white;
+}
+}
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px;}
+h1 { margin-top: 40px; }
+h2 { margin-top: 30px; }
+h3 { margin-top: 25px; font-size: 1.1em; text-transform: uppercase; }
+code { background-color: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-family: Consolas, monospace; color:black; }
+.note { background-color: #fff3cd; border-left: 5px solid #ffeeba; padding: 15px; margin: 20px 0; }
+.step { background-color: #e8f4fd; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
+.legal-box { border: 1px solid #ccc; padding: 20px; background-color: #fafafa; border-radius: 5px; margin-top: 20px; }
+.last-updated { font-style: italic; color: #666; font-size: 0.9em; }
+hr { border: 0; height: 1px; background: #ccc; margin: 50px 0; }
+.nav-box { background: #f9f9f9; border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
+.modernButton {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove default border */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline for anchor tags styled as buttons */
+  display: inline-block; /* Allows padding/margin to work correctly */
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.modernButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

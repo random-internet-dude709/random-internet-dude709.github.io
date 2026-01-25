@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registry Editor – Documentation & Terms of Service</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+      --border: #30363d;
+      --card: #161b22;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1, h2, h3 {
+      color: #ffffff;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+    .version {
+      color: #8b949e;
+      font-size: 1.1rem;
+    }
+    section {
+      margin: 50px 0;
+      padding: 32px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    code, pre {
+      background: #0d1117;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-family: "Consolas", "Courier New", monospace;
+    }
+    pre {
+      padding: 16px;
+      overflow-x: auto;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    .warning {
+      background: #2d1a1a;
+      border-left: 4px solid #c94d4d;
+      padding: 16px;
+      margin: 16px 0;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+      color: #8b949e;
+      font-size: 0.95rem;
+    }
+  </style>
+  <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>Registry Editor</h1>
+    <div class="version">Version 1.0 • 2025</div>
+    <p>A modern, dark-themed Windows registry viewer and editor</p>
+  </header>
+
+  <!-- ============================================================= -->
+
+  <section id="overview">
+    <h2>Overview</h2>
+    <p>This application is a lightweight, standalone alternative to <code>regedit.exe</code> with a modern user interface.</p>
+
+    <h3>Main features</h3>
+    <ul>
+      <li>Dark theme (Windows 11 style)</li>
+      <li>Frameless window with custom title bar</li>
+      <li>Tree-like navigation with folder icons</li>
+      <li>Always-visible (Default) value for every key</li>
+      <li>Create / modify / delete values (most common types)</li>
+      <li>Create subkeys (not directly under hive roots)</li>
+      <li>Delete subkeys (with confirmation)</li>
+      <li>Permission elevation prompt when needed</li>
+      <li>Custom icon support</li>
+    </ul>
+  </section>
+
+  <!-- ============================================================= -->
+
+  <section id="installation">
+    <h2>Installation & Usage</h2>
+
+    <h3>Requirements</h3>
+    <ul>
+      <li>Windows 10 or Windows 11 (64-bit)</li>
+      <li>No Python installation required (standalone .exe)</li>
+    </ul>
+
+    <h3>How to run</h3>
+    <ol>
+      <li>Double-click <code>regedit.exe</code></li>
+      <li><strong>Important:</strong> For editing <code>HKEY_LOCAL_MACHINE</code>, <code>HKEY_CLASSES_ROOT</code> and similar protected areas, right-click the executable → <strong>Run as administrator</strong></li>
+      <li>Use the path bar or double-click keys to navigate</li>
+      <li>Right-click in the list to create/modify/delete items</li>
+    </ol>
+
+    <div class="warning">
+      <strong>Warning:</strong> Incorrect changes in the registry can make your system unstable or unbootable. Always back up important keys before modifying them.
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+
+  <section id="tos">
+    <h2>Terms of Service & Disclaimer</h2>
+
+    <p><strong>Effective date:</strong> January 2025</p>
+
+    <h3>1. Acceptance of Terms</h3>
+    <p>By using this software ("Registry Editor") you agree to be bound by these terms. If you do not agree, do not use the program.</p>
+
+    <h3>2. Purpose & Scope</h3>
+    <p>This is an open hobby project / personal tool. It is provided "as is" without any warranty.</p>
+
+    <h3>3. No Warranty</h3>
+    <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</p>
+
+    <h3>4. Limitation of Liability</h3>
+    <p>In no event shall the author be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software — <strong>especially damage caused by incorrect registry modifications</strong>.</p>
+
+    <h3>5. Usage Restrictions</h3>
+    <ul>
+      <li>Do not use this software to harm systems, networks, or data</li>
+      <li>Do not redistribute modified versions without permission</li>
+      <li>Do not use in commercial products without explicit written consent</li>
+    </ul>
+
+    <h3>6. Third-party components</h3>
+    <p>The program uses:</p>
+    <ul>
+      <li>Python (standard library & tkinter)</li>
+      <li><a href="https://github.com/rdbende/Sun-Valley-ttk-theme">Sun Valley ttk theme</a> (MIT license)</li>
+      <li>Windows API via <code>winreg</code> and <code>ctypes</code></li>
+    </ul>
+
+    <h3>7. Changes to Terms</h3>
+    <p>These terms may be updated at any time. Continued use after changes constitutes acceptance.</p>
+
+    <h3>8. Contact</h3>
+    <p>Questions? Email <code>random-internet-dude@outlook.com</code></p>
+  </section>
+
+  <!-- ============================================================= -->
+
+  <footer>
+    <p>© 2025 • Registry Editor is free software • Use at your own risk</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
