@@ -1,1 +1,0 @@
-This repository is being used as a way to host my website.
